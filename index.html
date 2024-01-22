@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+<body>
+    <header>
+        <h1>Auto shop 1</h1>
+    </header>
+    <main>
+        <h2>Registration</h2>
+      <form action="#" method="post">
+        <label for="1">Surname</label> 
+        <input style="display:block;margin-bottom: 10px;" id="1" type="text" name="surname" placeholder="Surname">
+        <label for="2">Name</label>
+        <input style="display:block;margin-bottom: 10px;" id="2" type="text" name="name" placeholder="Name">
+        <label for="3">Region</label>
+        <input style="display:block;margin-bottom: 10px;" id="3" type="text" name="region" placeholder="Region">
+        <label for="4">Phone namber</label>
+        <input style="display:block;margin-bottom: 10px;" type="tel" id="4" name="phone namber"
+         placeholder="Phone namber" maxlength="13" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+        <label for="6">Email</label>
+        <input style="display:block;margin-bottom: 10px;" id="6" type="email" name="email" placeholder="Email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+          <!--Регистрация пороля-->
+
+        <fieldset>
+          <legend>Registration</legend>
+
+          <label for="#">User Name</label>
+          <input type="text" name="User Name" id="#" placeholder="User Name" style="margin-bottom: 20px;" required>
+
+          <label for="#1">Password</label>
+          <input type="password" name="password" id="#1" placeholder="Password" required>
+        </fieldset>
+
+        <!-- Подтверждение пороля-->
+
+        <fieldset>
+          <legend>Password confirmation</legend>
+
+          <label for="#2">Password</label>
+          <input type="password" name="password" id="#2" placeholder="Password" style="display:block; margin-bottom: 10px;" required>
+
+        </fieldset>
+
+           <input type="reset" value="Reset" name="reset">
+           <button type="submit">Send</button>
+
+      </form>
+    </main>
+</body>
+</html>
